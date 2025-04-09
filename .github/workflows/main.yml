@@ -1,9 +1,10 @@
 name: Post JSON File to Two URLs
-  on:
-    push:
-      branches:
-        - main # Runs only when pushing to the main branch
-    workflow_dispatch: # Allows manual trigger
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # <-- This is required for manual trigger
     
 jobs:
   post_json:
